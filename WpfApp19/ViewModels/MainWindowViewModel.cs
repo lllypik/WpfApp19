@@ -52,13 +52,13 @@ namespace WpfApp19.ViewModels
         // Вычисление площади с помощью стат. метода
         private void OnGetCircumferenceCommandExecute(object p)
         {
-            outputCircumference = Geometry.GetCircumference(inputRadius);                       
+            OutputCircumference = Geometry.GetCircumference(inputRadius);                       
         }
 
         //Проверка активности выполнеия команды
         private bool CanOnGetCircumferenceCommandExecute(object p)
         {
-            if (inputRadius > 0) return true;
+            if (InputRadius > 0) return true;
             else return false;
         }
 
